@@ -1,7 +1,6 @@
 from django.urls import path
-from .views import login
+from .views import UsuarioView #mudar dps para register
 
 urlpatterns = [
-    path('login', login)
-    #path('register', register)
+    path('register', UsuarioView.as_view()),
 ]
